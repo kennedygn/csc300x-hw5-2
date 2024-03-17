@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokebook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jokebook</h1>
+    </header>
+    <main>
+        <section class="categories">
+            <h2>Categories</h2>
+            <div id="category-list">
+                <!-- Category list will be displayed here -->
+            </div>
+
+            <div id="joke-display">
+                <!-- Jokes will be displayed here -->
+            </div>
+
+        </section>
+
+        <section class="add-joke">
+            <h2>Add a Joke</h2>
+            <form id="add-joke-form" class="add-joke-form">
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="funnyJoke">Funny Joke</option>
+                    <option value="lameJoke">Lame Joke</option>
+                </select>
+                <label for="joke">Joke:</label>
+                <input type="text" id="joke" required>
+                <label for="response">Response:</label>
+                <input type="text" id="response" required>
+                <button type="submit">Add Joke</button>
+            </form>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
