@@ -1,17 +1,3 @@
-//document.addEventListener("DOMContentLoaded", () => {
-// Function to fetch and display jokes from a category
-
-// Function to fetch and display joke categories
-
-// Initial display of categories and jokes
-
-// Event listener for form submission to add a new joke
-
-//});
-
-// Define the jokebook array to store custom jokes
-let jokebook = [];
-
 // Function to fetch and display jokes from a category
 const displayJokes = async (category) => {
   try {
@@ -66,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("response").value = "";
         // Update the UI to display the new joke in the respective category
         displayJokes(category);
-        // Optionally, you can display a message or update the UI after adding the joke
         console.log("New joke added:", data);
       } catch (error) {
         console.error("Error adding new joke:", error);
