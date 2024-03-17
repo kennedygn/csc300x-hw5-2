@@ -1,3 +1,9 @@
+/*Kennedy Ninh & Hayden Perusek       300X HW5-2        3/17/2024*/
+/*In this assignment, we have built a full-stack application with a Node/Express backend and a
+simple HTML/CSS/JavaScript frontend.*/
+
+
+//By: Hayden Perusek
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000; 
@@ -57,6 +63,7 @@ app.get('/jokebook/joke/:category', (req, res) => {
     }
 });
 
+//By: Kennedy Ninh
 // Add a new joke endpoint
 app.post('/jokebook/joke/new', (req, res) => {
     const { category, joke, response } = req.body;

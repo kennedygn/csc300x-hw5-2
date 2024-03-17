@@ -1,4 +1,11 @@
+/*Kennedy Ninh & Hayden Perusek       300X HW5-2        3/17/2024*/
+/*In this assignment, we have built a full-stack application with a Node/Express backend and a
+simple HTML/CSS/JavaScript frontend.*/
+
+
+
 // Function to fetch and display jokes from a category
+//By: Hayden Perusek
 const displayJokes = async (category) => {
   try {
     const response = await fetch(
@@ -28,7 +35,7 @@ const displayJokes = async (category) => {
   }
 };
 
-
+//By: Hayden Perusek
 document.addEventListener("DOMContentLoaded", () => {
   // Event listener for form submission to add a new joke
   document
@@ -61,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   displayCategories();
 });
 
+//By: Kennedy Ninh
 // Function to fetch and display joke categories
 const displayCategories = async () => {
   try {
